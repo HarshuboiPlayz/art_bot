@@ -1,7 +1,8 @@
+# import server
+import server
 import discord
 import random
 import os
-from keepalive import keep_alive
 
 list_of_art = ["Dragon", "Bird", "Shrek", "Discord Logo", "Ghost", "Doll", "Custom Creature/Monster", "Animal Hybrid", "Vampire (with clothes)", "Basic Human (with clothes)", "Zombie (with clothes)", "Werewolf (with clothes)", "Plant", "Flower", "Rose", "Bat", "Chinchilla", "Fox", "Cat", "Dog", "Phoenix", "Unicorn", "Pegasus", "Unisus", "Gargoyle", "Prince/Pricess (with clothes)", "Queen/King (with clothes)", "Merman/Mermaid (with clothes)", "Witch/Wizard (with clothes)", "Paranormal Investigator (with clothes)", "Detective", "Assasin"]
 
@@ -34,5 +35,6 @@ async def on_message(message):
 
 
 TOKEN = os.getenv("TOKEN")
-keep_alive()
+# host index.html
+server.super_run()
 client.run(TOKEN)
